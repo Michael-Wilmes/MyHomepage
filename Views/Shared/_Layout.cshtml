@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Michael Wilmes</title>
+    <meta name="description" content="Michael Wilmes - Softwareentwicklung, KI, Systeme und technische Exploration." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Michael Wilmes Startseite">
+            <img src="~/images/logo.png" alt="Michael Wilmes - Development with Passion" />
+        </a>
+        <nav class="main-nav" aria-label="Hauptnavigation">
+            <a href="#top" class="active">Home</a>
+            <a href="#about">Über mich</a>
+            <a href="#topics">Themen</a>
+            <a href="#notes">Gedanken</a>
+            <a href="mailto:micha.wilmes@outlook.com">Kontakt</a>
+        </nav>
+    </header>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <img src="~/images/logo.png" alt="" />
+        <span>© @DateTime.Now.Year Michael Wilmes. Development with Passion.</span>
+        <div class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="mailto:micha.wilmes@outlook.com">E-Mail</a>
+        </div>
+    </footer>
+</body>
+</html>

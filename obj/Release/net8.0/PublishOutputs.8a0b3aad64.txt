@@ -1,0 +1,6 @@
+C:\Users\micha\Downloads\MichaelWilmesMvc_fade\MichaelWilmes\obj\Release\net8.0\PubTmp\Out\MichaelWilmes.exe
+C:\Users\micha\Downloads\MichaelWilmesMvc_fade\MichaelWilmes\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\micha\Downloads\MichaelWilmesMvc_fade\MichaelWilmes\obj\Release\net8.0\PubTmp\Out\MichaelWilmes.dll
+C:\Users\micha\Downloads\MichaelWilmesMvc_fade\MichaelWilmes\obj\Release\net8.0\PubTmp\Out\MichaelWilmes.deps.json
+C:\Users\micha\Downloads\MichaelWilmesMvc_fade\MichaelWilmes\obj\Release\net8.0\PubTmp\Out\MichaelWilmes.runtimeconfig.json
+C:\Users\micha\Downloads\MichaelWilmesMvc_fade\MichaelWilmes\obj\Release\net8.0\PubTmp\Out\MichaelWilmes.pdb
