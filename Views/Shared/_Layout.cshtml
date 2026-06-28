@@ -13,13 +13,18 @@
 <body>
     <header class="site-header">
         <a class="brand" href="#top" aria-label="Michael Wilmes Startseite">
-            <img src="~/images/logo.png" alt="Michael Wilmes - Development with Passion" />
+            <img src="~/images/logo_small.png" alt="Michael Wilmes - Development with Passion" />
         </a>
-        <nav class="main-nav" aria-label="Hauptnavigation">
+        <button class="nav-toggle" type="button" aria-label="Navigation öffnen" aria-controls="main-nav" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
             <a href="#top" class="active">Home</a>
-            <a href="#about">Über mich</a>
             <a href="#topics">Themen</a>
             <a href="#notes">Gedanken</a>
+            <a href="#about">Über mich</a>
             <a href="mailto:micha.wilmes@outlook.com">Kontakt</a>
         </nav>
     </header>
@@ -29,13 +34,51 @@
     </main>
 
     <footer class="site-footer">
-        <img src="~/images/logo.png" alt="" />
-        <span>© @DateTime.Now.Year Michael Wilmes. Development with Passion.</span>
+        <!-- <img src="~/images/logo.png" alt="" /> -->
+        <span>© @DateTime.Now.Year Michael Wilmes</span>
         <div class="footer-links">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="mailto:micha.wilmes@outlook.com">E-Mail</a>
+            <a href="https://github.com/Michael-Wilmes" aria-label="GitHub">
+                <svg class="footer-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.01-.02-1.99-3.2.7-3.88-1.54-3.88-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.69.08-.69 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.73-1.53-2.55-.29-5.23-1.27-5.23-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 0 1 5.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.73.8 1.18 1.82 1.18 3.07 0 4.39-2.69 5.36-5.25 5.64.41.35.77 1.03.77 2.08 0 1.5-.01 2.71-.01 3.08 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg>
+                <!--<span>GitHub</span>-->
+                
+            </a>
+            <a href="https://www.linkedin.com/in/michael-wilmes-bb727391/" aria-label="LinkedIn">
+                <svg class="footer-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 9h4v12H3V9Zm7 0h3.83v1.64h.05c.53-1.01 1.84-2.08 3.78-2.08C21.6 8.56 23 11.05 23 14.2V21h-4v-5.99c0-1.43-.03-3.26-1.98-3.26-1.98 0-2.29 1.55-2.29 3.15V21h-4V9Z" />
+                </svg>
+                <!--<span>LinkedIn</span>-->
+            </a>
+            <a class="footer-email" href="mailto:micha.wilmes@outlook.com" aria-label="E-Mail">
+                <svg class="footer-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M3 6.5h18v11H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="m3.6 7.1 8.4 6.4 8.4-6.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            const header = document.querySelector('.site-header');
+            const toggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelectorAll('.main-nav a');
+
+            if (!header || !toggle) return;
+
+            toggle.addEventListener('click', function () {
+                const isOpen = header.classList.toggle('menu-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    header.classList.remove('menu-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        })();
+    </script>
 </body>
 </html>

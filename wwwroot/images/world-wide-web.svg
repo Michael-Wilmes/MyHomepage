@@ -1,0 +1,55 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+	<linearGradient id="neon" x1="88" y1="90" x2="422" y2="430" gradientUnits="userSpaceOnUse">
+	  <stop stop-color="#73F2FF"/>
+	  <stop offset="1" stop-color="#14BDD4"/>
+	</linearGradient>
+	<radialGradient id="cardFill" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(214 260) rotate(90) scale(160)">
+	  <stop offset="0" stop-color="#12212B"/>
+	  <stop offset="1" stop-color="#071018"/>
+	</radialGradient>
+	<filter id="glow" x="-30%" y="-30%" width="160%" height="160%" filterUnits="objectBoundingBox">
+	  <feGaussianBlur stdDeviation="4"/>
+	</filter>
+  </defs>
+
+  <g opacity="0.32" filter="url(#glow)">
+	<rect x="62" y="116" width="300" height="288" rx="28" fill="#27E6FF"/>
+  </g>
+
+  <rect x="76" y="126" width="276" height="260" rx="24" fill="url(#cardFill)" stroke="url(#neon)" stroke-width="6"/>
+
+  <g stroke="url(#neon)" stroke-width="4" stroke-linecap="round">
+	<path d="M102 178H230"/>
+	<path d="M102 214H208"/>
+	<path d="M102 250H220"/>
+	<path d="M102 286H196"/>
+	<path d="M102 322H214"/>
+  </g>
+
+  <rect x="232" y="170" width="94" height="136" rx="12" fill="#0A1720" stroke="url(#neon)" stroke-width="4"/>
+  <rect x="248" y="188" width="62" height="22" rx="6" fill="#071118" stroke="url(#neon)" stroke-width="3"/>
+  <circle cx="258" cy="236" r="6" fill="#73F2FF"/>
+  <circle cx="279" cy="236" r="6" fill="#73F2FF"/>
+  <circle cx="300" cy="236" r="6" fill="#73F2FF"/>
+  <path d="M247 266H311" stroke="url(#neon)" stroke-width="3"/>
+  <path d="M247 282H295" stroke="url(#neon)" stroke-width="3"/>
+
+  <g stroke="url(#neon)" stroke-width="5" stroke-linecap="round">
+	<path d="M352 190C374 190 392 208 392 230"/>
+	<path d="M352 160C390 160 422 192 422 230"/>
+	<path d="M352 130C406 130 450 174 450 230"/>
+  </g>
+
+  <g fill="#73F2FF">
+	<circle cx="392" cy="230" r="8"/>
+	<circle cx="422" cy="230" r="8"/>
+	<circle cx="450" cy="230" r="8"/>
+  </g>
+
+  <g stroke="url(#neon)" stroke-width="6" stroke-linecap="round">
+	<path d="M352 320H410"/>
+	<path d="M352 348H434"/>
+  </g>
+  <rect x="410" y="307" width="26" height="54" rx="8" fill="#08131B" stroke="url(#neon)" stroke-width="4"/>
+</svg>

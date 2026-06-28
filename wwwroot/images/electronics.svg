@@ -1,0 +1,66 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+	<linearGradient id="line" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+	  <stop stop-color="#73F2FF"/>
+	  <stop offset="1" stop-color="#14BDD4"/>
+	</linearGradient>
+	<radialGradient id="chip" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) rotate(90) scale(120)">
+	  <stop offset="0" stop-color="#10212C"/>
+	  <stop offset="1" stop-color="#081018"/>
+	</radialGradient>
+	<filter id="glow" x="-30%" y="-30%" width="160%" height="160%" filterUnits="objectBoundingBox">
+	  <feGaussianBlur stdDeviation="4"/>
+	</filter>
+  </defs>
+
+  <g opacity="0.25" filter="url(#glow)">
+	<circle cx="256" cy="256" r="170" fill="#27E6FF"/>
+  </g>
+
+  <rect x="156" y="156" width="200" height="200" rx="24" fill="url(#chip)" stroke="url(#line)" stroke-width="5"/>
+
+  <g stroke="url(#line)" stroke-width="5" stroke-linecap="round">
+	<path d="M156 196H92"/>
+	<path d="M156 236H72"/>
+	<path d="M156 276H72"/>
+	<path d="M156 316H92"/>
+	<path d="M356 196H420"/>
+	<path d="M356 236H440"/>
+	<path d="M356 276H440"/>
+	<path d="M356 316H420"/>
+	<path d="M196 156V92"/>
+	<path d="M236 156V72"/>
+	<path d="M276 156V72"/>
+	<path d="M316 156V92"/>
+	<path d="M196 356V420"/>
+	<path d="M236 356V440"/>
+	<path d="M276 356V440"/>
+	<path d="M316 356V420"/>
+  </g>
+
+  <g fill="#73F2FF">
+	<circle cx="72" cy="236" r="7"/>
+	<circle cx="72" cy="276" r="7"/>
+	<circle cx="440" cy="236" r="7"/>
+	<circle cx="440" cy="276" r="7"/>
+	<circle cx="236" cy="72" r="7"/>
+	<circle cx="276" cy="72" r="7"/>
+	<circle cx="236" cy="440" r="7"/>
+	<circle cx="276" cy="440" r="7"/>
+  </g>
+
+  <rect x="190" y="190" width="132" height="132" rx="16" fill="#0D1B24" stroke="url(#line)" stroke-width="3"/>
+
+  <g stroke="url(#line)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+	<path d="M228 220L206 256L228 292"/>
+	<path d="M284 220L306 256L284 292"/>
+	<path d="M246 302L266 210"/>
+  </g>
+
+  <g opacity="0.88" stroke="url(#line)" stroke-width="2.2" stroke-linecap="round">
+	<path d="M110 236C130 236 140 226 156 214"/>
+	<path d="M110 276C130 276 140 286 156 298"/>
+	<path d="M402 236C382 236 372 226 356 214"/>
+	<path d="M402 276C382 276 372 286 356 298"/>
+  </g>
+</svg>
